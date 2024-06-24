@@ -6,6 +6,7 @@ trigger:
   event:
     - push
 
+
 steps:
   - name: code-analysis
     image: aosapps/drone-sonar-plugin
