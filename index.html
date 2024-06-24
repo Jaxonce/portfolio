@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Maxence Lanone</title>
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <h3>
+      <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link">ML.</a>
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#experiences">Experiences</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <div class="about center">
+      <h1>Hi, I am <span class="about__name">Maxence Lanone.</span></h1>
+      <h2 class="about__role">A Full Stack Developer.</h2>
+      <p class="about__desc">
+        Je suis actuellement en dernière année de BUT Informatique à Clermont Ferrand, et je continue l'année prochaine en Mastère à L'ESGI.
+        Je suis passioné par le developpement, et plus particulièrement ce qui tourne autour du développement mobile. N'hésitez pas à me contacter si vous avez des questions.
+      </p>
+
+      <div class="about__contact center">
+        <a href="https://example.com">
+          <span class="btn btn--outline">Resume</span>
+        </a>
+
+        <a href="https://github.com/Jaxonce" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/maxence-lanone/" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <section id="experiences" class="accordeon section experiences">
+      <h2 class="section__title">Experiences</h2>
+
+      <div class="accordeon__item">
+        <div class="accordeon__title">
+          <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
+          <span class="accordeon__title-text"><h3>Développeur logiciel alternant | Accenture/Michelin | Clermont-Ferrand</h3></span>
+        </div>
+        <div class="accordeon__content">
+          <h4>Stack</h4>
+          <ul>
+            <li>Angular</li>
+            <li>Springboot</li>
+            <li>JUnit</li>
+          </ul>
+          <h4></h4>
+        </div>
+      </div>
+      <div class="accordeon__item">
+        <div class="accordeon__title">
+          <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
+          <span class="accordeon__title-text"><h3>Développeur stagiaire</h3></span>
+        </div>
+        <div class="accordeon__content">
+          <h4>Accenture/Michelin | Clermont-Ferrand</h4>
+          Stage chez michelin
+        </div>
+      </div>
+      <div class="accordeon__item">
+        <div class="accordeon__title">
+          <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
+          <span class="accordeon__title-text"><h3>Demi chef de rang | Rivage Hôtel | Annecy</h3></span>
+        </div>
+        <div class="accordeon__content">
+          Saison hotelerie
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__grid">
+        <div class="project">
+          <h3>Trek 12</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React Native</li>
+            <li class="project__stack-item">Entity Framework</li>
+            <li class="project__stack-item">Dotnet</li>
+          </ul>
+
+          <a href="https://github.com/Jaxonce/Trek12.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <span>
+            App
+          </span>
+          <a href="https://github.com/Jaxonce/Trek12_API.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <span>
+            Api
+          </span>
+        </div>
+
+        <div class="project">
+          <h3>Trek 12</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React Native</li>
+            <li class="project__stack-item">Entity Framework</li>
+            <li class="project__stack-item">Dotnet</li>
+          </ul>
+
+          <a href="https://github.com/Jaxonce/Trek12.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <span>
+            App
+          </span>
+          <a href="https://github.com/Jaxonce/Trek12_API.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <span>
+            Api
+          </span>
+        </div>
+
+        <div class="project">
+          <h3>Cypres</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Flutter</li>
+            <li class="project__stack-item">Entity Framework</li>
+            <li class="project__stack-item">Dotnet</li>
+          </ul>
+
+          <a href="https://github.com/Jaxonce/Cypres.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Dou Shou Qi</h3>
+          <p class="project__description">
+            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+            sapiente debitis labore sed ipsam Mollitia repellat illum quod
+            unde beatae Quis
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Swift</li>
+            <li class="project__stack-item">SwiftUI</li>
+            <li class="project__stack-item">Sprite Kit</li>
+          </ul>
+
+          <a href="https://github.com/Jaxonce/DouShouKi.git" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!-- <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Java</li>
+        <li class="skills__list-item btn btn--plain">Springboot</li>
+        <li class="skills__list-item btn btn--plain">JUnit</li>
+        <li class="skills__list-item btn btn--plain">Angular</li>
+        <li class="skills__list-item btn btn--plain">Flutter</li>
+        <li class="skills__list-item btn btn--plain">React Native</li>
+        <li class="skills__list-item btn btn--plain">React</li>
+        <li class="skills__list-item btn btn--plain">Swift</li>
+        <li class="skills__list-item btn btn--plain">PostgresSQL</li>
+        <li class="skills__list-item btn btn--plain">Git</li>
+        <li class="skills__list-item btn btn--plain">Swift UI</li>
+        <li class="skills__list-item btn btn--plain">C#</li>
+        <li class="skills__list-item btn btn--plain">Entity Framework</li>
+        <li class="skills__list-item btn btn--plain">CI/CD</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:lanonemaxence@gmail.com">
+        <span class="btn btn--outline">Email me</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    
+  </footer>
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
