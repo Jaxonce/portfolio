@@ -22,7 +22,7 @@ steps:
   #      password:
   #        from_secret: SECRET_REGISTRY_PASSWORD
 
-    - name: docker-build-and-push
+  - name: docker-build-and-push
     image: hub.codefirst.iut.uca.fr/clement.freville2/plugins/kaniko:latest
     settings:
        dockerfile: docker/Dockerfile
