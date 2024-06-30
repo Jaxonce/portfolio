@@ -85,3 +85,61 @@ $(function() {
 	//END
 	
 });
+
+// langage
+
+const translations = {
+    "en": "lang/en.json",
+    "fr": "lang/fr.json"
+};
+
+function setLanguage(lang) {
+    fetch(translations[lang])
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('experience').innerText = data.experiences;
+            document.getElementById('project').innerText = data.projects;
+			document.getElementById('skills').innerText = data.skills;
+			document.getElementById('contact').innerText = data.contact;
+			document.getElementById('title_first_part').innerText = data.title_first_part;
+			//document.getElementById('title_second_part').innerText = data.title_second_part;
+			document.getElementById('role').innerText = data.role;
+			document.getElementById('about_description').innerText = data.about_description;
+			document.getElementById('btn_resume').innerText = data.resume;
+			document.getElementById('first_experience').innerText = data.experience_section.first.title;
+			document.getElementById('second_experience').innerText = data.experience_section.second.title;
+			document.getElementById('third_experience').innerText = data.experience_section.third.title;
+			document.getElementById('project_section_title').innerText = data.projects_section.title;
+			document.getElementById('first_project_description').innerText = data.projects_section.first.description;
+			document.getElementById('second_project_description').innerText = data.projects_section.second.description;
+			document.getElementById('third_project_description').innerText = data.projects_section.third.description;
+			document.getElementById('skills_section').innerText = data.skills;
+			document.getElementById('email_me').innerText = data.contacts_section.button;
+        })
+        .catch(error => console.error('Error loading translations:', error));
+}
+
+// Set default language
+setLanguage('en');
+
+// change contrast
+
+function changeContrast() {
+	const contrast = document.querySelector('html')
+
+	if (contrast.classList.contains('contrast')) {
+		contrast.classList.remove('contrast')
+	} else {
+		contrast.classList.add('contrast')
+	}
+}
+
+function changeLineHeight() {
+	const contrast = document.getElementsByTagName('body')
+
+	if (contrast[0].style.lineHeight == '1.5') {
+		contrast[0].style.lineHeight = '2.5'
+	} else {
+		contrast[0].style.lineHeight = '1.5'
+	}
+}

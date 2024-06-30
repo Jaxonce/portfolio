@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,19 +17,19 @@
 <body class="light" id="top">
   <header class="header center">
     <h3>
-      <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link">ML.</a>
+      <a class="link">ML.</a>
     </h3>
 
     <nav class="nav center">
       <ul class="nav__list center">
         <li class="nav__list-item">
-          <a class="link link--nav" href="#experiences">Experiences</a>
+          <a class="link link--nav" id="experience" href="#experiences">Experiences</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
+          <a class="link link--nav" id="project" href="#projects">Projects</a>
         </li>
         <li class="nav__list-item">
-          <a class="link link--nav" href="#skills">Skills</a>
+          <a class="link link--nav" id="skills" href="#skills">Skills</a>
         </li>
         <li class="nav__list-item">
           <a class="link link--nav" href="#contact">Contact</a>
@@ -49,16 +49,18 @@
   <main>
     <!-- About -->
     <div class="about center">
-      <h1>Hi, I am <span class="about__name">Maxence Lanone.</span></h1>
-      <h2 class="about__role">A Full Stack Developer.</h2>
-      <p class="about__desc">
-        Je suis actuellement en dernière année de BUT Informatique à Clermont Ferrand, et je continue l'année prochaine en Mastère à L'ESGI.
-        Je suis passioné par le developpement, et plus particulièrement ce qui tourne autour du développement mobile. N'hésitez pas à me contacter si vous avez des questions.
+      <h1 id="title_first_part">Hi, I am <span id="title_second_part" class="about__name">Maxence Lanone.</span></h1>
+      <h2 id="role" class="about__role">A Full Stack Developer.</h2>
+      <p class="about__desc" id="about_description">
+        Je suis actuellement en dernière année de BUT Informatique à Clermont Ferrand, et je continue l'année prochaine
+        en Mastère à L'ESGI.
+        Je suis passioné par le developpement, et plus particulièrement ce qui tourne autour du développement mobile.
+        N'hésitez pas à me contacter si vous avez des questions.
       </p>
 
       <div class="about__contact center">
-        <a href="https://example.com">
-          <span class="btn btn--outline">Resume</span>
+        <a href="./assets/file/CV_Lanone_Maxence.pdf">
+          <span id="btn_resume" class="btn btn--outline">Resume</span>
         </a>
 
         <a href="https://github.com/Jaxonce" aria-label="github" class="link link--icon">
@@ -77,7 +79,9 @@
       <div class="accordeon__item">
         <div class="accordeon__title">
           <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
-          <span class="accordeon__title-text"><h3>Développeur logiciel alternant | Accenture/Michelin | Clermont-Ferrand</h3></span>
+          <span class="accordeon__title-text">
+            <h3 id="first_experience">Développeur logiciel alternant | Accenture/Michelin | Clermont-Ferrand</h3>
+          </span>
         </div>
         <div class="accordeon__content">
           <h4>Stack</h4>
@@ -86,13 +90,14 @@
             <li>Springboot</li>
             <li>JUnit</li>
           </ul>
-          <h4></h4>
         </div>
       </div>
       <div class="accordeon__item">
         <div class="accordeon__title">
           <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
-          <span class="accordeon__title-text"><h3>Développeur stagiaire</h3></span>
+          <span class="accordeon__title-text">
+            <h3 id="second_experience">Développeur stagiaire</h3>
+          </span>
         </div>
         <div class="accordeon__content">
           <h4>Accenture/Michelin | Clermont-Ferrand</h4>
@@ -102,7 +107,9 @@
       <div class="accordeon__item">
         <div class="accordeon__title">
           <div class="accordeon__arrow"><span class="accordeon__arrow-item ">+</span></div>
-          <span class="accordeon__title-text"><h3>Demi chef de rang | Rivage Hôtel | Annecy</h3></span>
+          <span class="accordeon__title-text">
+            <h3 id="third_experience">Demi chef de rang | Rivage Hôtel | Annecy</h3>
+          </span>
         </div>
         <div class="accordeon__content">
           Saison hotelerie
@@ -112,39 +119,13 @@
 
     <!-- Projects -->
     <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
+      <h2 id="project_section_title" class="section__title">Projects</h2>
 
       <div class="projects__grid">
-        <div class="project">
-          <h3>Trek 12</h3>
-          <p class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">React Native</li>
-            <li class="project__stack-item">Entity Framework</li>
-            <li class="project__stack-item">Dotnet</li>
-          </ul>
-
-          <a href="https://github.com/Jaxonce/Trek12.git" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <span>
-            App
-          </span>
-          <a href="https://github.com/Jaxonce/Trek12_API.git" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <span>
-            Api
-          </span>
-        </div>
 
         <div class="project">
           <h3>Trek 12</h3>
-          <p class="project__description">
+          <p id="first_project_description" class="project__description">
             Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
             sapiente debitis labore sed ipsam Mollitia repellat illum quod
             unde beatae Quis
@@ -171,7 +152,7 @@
 
         <div class="project">
           <h3>Cypres</h3>
-          <p class="project__description">
+          <p id="second_project_description" class="project__description">
             Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
             sapiente debitis labore sed ipsam Mollitia repellat illum quod
             unde beatae Quis
@@ -192,7 +173,7 @@
 
         <div class="project">
           <h3>Dou Shou Qi</h3>
-          <p class="project__description">
+          <p id="third_project_description" class="project__description">
             Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
             sapiente debitis labore sed ipsam Mollitia repellat illum quod
             unde beatae Quis
@@ -215,7 +196,7 @@
 
     <!-- Skills -->
     <section class="section skills" id="skills">
-      <h2 class="section__title">Skills</h2>
+      <h2 id="skills_section" class="section__title">Skills</h2>
       <ul class="skills__list">
         <li class="skills__list-item btn btn--plain">Java</li>
         <li class="skills__list-item btn btn--plain">Springboot</li>
@@ -235,16 +216,26 @@
     </section>
 
     <!-- Contact -->
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
+    <section class="section contact center">
+      <h2 id="contact" class="section__title">Contact</h2>
       <a href="mailto:lanonemaxence@gmail.com">
-        <span class="btn btn--outline">Email me</span>
+        <span id="email_me" class="btn btn--outline">Email me</span>
       </a>
     </section>
   </main>
 
   <footer class="footer">
-    
+    <div class="language-selector">
+      <button onclick="setLanguage('en')">
+        <img id="flag_image" src="./assets/img/united-kingdom-flag.png"/>
+      </button>
+      <button onclick="setLanguage('fr')">
+        <img id="flag_image" src="./assets/img/france-flag.png"/>
+      </button>
+      <button id="btn_accessibility" onclick="changeContrast()">Contraste</button>
+      |
+      <button id="btn_accessibility" onclick="changeLineHeight()">Interlignage</button>
+    </div>
   </footer>
 
   <div class="scroll-container">

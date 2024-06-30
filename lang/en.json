@@ -1,0 +1,47 @@
+{
+    "project": "Project",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "experiences": "experiences",
+    "title_first_part": "Hi, I am",
+    "title_second_part": "Maxence Lanone.",
+    "role": "a Full Stack Developer.",
+    "about_description": "I'm currently in my final year of BUT Informatique in Clermont Ferrand, and I'm continuing next year with a Master's degree at ESGI. I'm passionate about development, especially mobile development. Don't hesitate to contact me if you have any questions.",
+    "resume": "resume",
+    "stack": "Stack",
+    "experience_section": {
+        "title": "Experiences",
+        "first": {
+            "title": "Software developer | Accenture/Michelin | Clermont-Ferrand",
+            "subtitle": ""
+        },
+        "second": {
+            "title": "Internship at the company",
+            "subtitle": ""
+        },
+        "third": {
+            "title": "Internship at the company",
+            "subtitle": ""
+        }
+    },
+    "projects_section": {
+        "title": "Projects",
+        "first": {
+            "title": "Trek12",
+            "description": "I did my first project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+        },
+        "second": {
+            "title": "Cypres",
+            "description": "I did my second project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+        },
+        "third": {
+            "title": "Dou Shou Qi",
+            "description": "I did my third project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+        }
+    },
+    "contacts_section": {
+        "title": "Contact",
+        "button": "email me"
+    }
+}

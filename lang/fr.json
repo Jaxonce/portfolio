@@ -1,0 +1,46 @@
+{
+    "project": "Projet",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "experiences": "experiences",
+    "title_first_part": "Bonjour, je suis",
+    "title_second_part": "Maxence Lanone.",
+    "role": "un developpeur Full Stack.",
+    "about_description": "Je suis actuellement en dernière année de BUT Informatique à Clermont Ferrand, et je continue l'année prochaine en Mastère à L'ESGI. Je suis passioné par le developpement, et plus particulièrement ce qui tourne autour du développement mobile. N'hésitez pas à me contacter si vous avez des questions.",
+    "resume": "CV",
+    "stack": "Technologies",
+    "experience_section": {
+        "first": {
+            "title": "Développeur logiciel alternant | Accenture/Michelin | Clermont-Ferrand",
+            "subtitle": ""
+        },
+        "second": {
+            "title": "Développeur stagiaire | Accenture/Michelin | Clermont-Ferrand",
+            "subtitle": ""
+        },
+        "third": {
+            "title": "Demi chef de rang | Rivage Hôtel | Annecy",
+            "subtitle": ""
+        }
+    },
+    "projects_section": {
+        "title": "Projets",
+        "first": {
+            "title": "Trek12",
+            "description": "Trek12 est une adaptation du jeu de plateau Trek12 en application mobile. J'ai travailler sur ce projet avec une équipe de 4 personnes. J'ai pu apprendre beaucoup sur le développement d'applications mobiles et d'api."
+        },
+        "second": {
+            "title": "Cypres",
+            "description": "Cyprès une application mobile multiplateforme qui permet d'échanger du contenu avec ses amis. Centré autour d'une messagerie, on a alors accès à différentes applications pour partager des choses avec ses proches. Cette application a été réalisée à 2."
+        },
+        "third": {
+            "title": "Dou Shou Qi",
+            "description": "Dou Shou Qi est une adaptation du jeu de plateau Chinois Dou Shou Qi en application mobile. J'ai travailler sur ce projet dans le cadre du cours de Swift en 3ème année de BUT."
+        }
+    },
+    "contacts_section": {
+        "title": "Contact",
+        "button": "envoyer un email"
+    }
+}
