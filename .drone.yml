@@ -9,13 +9,26 @@ trigger:
 
 steps:
 
-  - name: docker-build-and-push
-    image: plugins/docker
+  # - name: docker-build-and-push
+  #   image: plugins/docker
+  #   settings:
+  #      dockerfile: docker/Dockerfile
+  #      context: .
+  #      registry: hub.codefirst.iut.uca.fr
+  #      mirror: https://proxy.iut.uca.fr:8443
+  #      repo: hub.codefirst.iut.uca.fr/maxence.lanone/portfoliomalanone
+  #      username:
+  #        from_secret: SECRET_REGISTRY_USERNAME
+  #      password:
+  #        from_secret: SECRET_REGISTRY_PASSWORD
+
+    - name: docker-build-and-push
+    image: hub.codefirst.iut.uca.fr/clement.freville2/plugins/kaniko:latest
     settings:
        dockerfile: docker/Dockerfile
        context: .
        registry: hub.codefirst.iut.uca.fr
-       mirror: https://proxy.iut.uca.fr:8443
+       mirror: mirror.gcr.io
        repo: hub.codefirst.iut.uca.fr/maxence.lanone/portfoliomalanone
        username:
          from_secret: SECRET_REGISTRY_USERNAME
