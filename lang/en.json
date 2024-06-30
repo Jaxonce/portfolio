@@ -14,30 +14,44 @@
         "title": "Experiences",
         "first": {
             "title": "Software developer | Accenture/Michelin | Clermont-Ferrand",
-            "subtitle": ""
+            "date": "September 2023 - Now",
+            "description": "Work-study program at accenture, on assignment at Michelin",
+            "mission": {
+                "first": "Search for AI-based unit test generation solutions",
+                "second": "Integration tests on existing application",
+                "third": "Optimization of CI/CD execution time"
+            }
         },
         "second": {
-            "title": "Internship at the company",
-            "subtitle": ""
+            "title": "Trainee developer | Accenture/Michelin | Clermont-Ferrand",
+            "date": "April 2023 - June 2023",
+            "description": "Internship at Accenture, on assignment at Michelin",
+            "mission": {
+                "first": "Data migration between two reference systems",
+                "second": "Implementing new functionalities in an existing Angular/Springboot application"
+            }
         },
         "third": {
-            "title": "Internship at the company",
-            "subtitle": ""
+            "title": "Half head waiter | Rivage Hôtel | Annecy",
+            "date": "July 2022 - August 2022",
+            "mission": {
+                "first": "Room service, customer reception, runner, teamwork"
+            }
         }
     },
     "projects_section": {
         "title": "Projects",
         "first": {
             "title": "Trek12",
-            "description": "I did my first project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+            "description": "Trek12 is an adaptation of the Trek12 board game into a cross-platform mobile application. I worked on this project with a team of 4 people. I learned a lot about mobile application development and api."
         },
         "second": {
             "title": "Cypres",
-            "description": "I did my second project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+            "description": "Cyprès is a cross-platform mobile application for sharing content with friends. Centered around a messaging system, it gives you access to different applications for sharing things with your loved ones. This application was created by 2."
         },
         "third": {
             "title": "Dou Shou Qi",
-            "description": "I did my third project. I was able to work on a mobile application in React Native. I was able to learn a lot about the development of mobile applications."
+            "description": "Dou Shou Qi is an adaptation of the Chinese board game Dou Shou Qi into a mobile application. I worked on this project as part of the Swift course in my 3rd year at BUT."
         }
     },
     "contacts_section": {

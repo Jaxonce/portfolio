@@ -13,15 +13,29 @@
     "experience_section": {
         "first": {
             "title": "Développeur logiciel alternant | Accenture/Michelin | Clermont-Ferrand",
-            "subtitle": ""
+            "date": "Septembre 2023 - Aujourd'hui",
+            "description": "Alternance chez Accenture, en mission chez michelin",
+            "mission": {
+                "first": "Recherche de solution de génération de tests unitaires grâce aux IA",
+                "second": "Tests d'intégrations sur une application existante",
+                "third": "Optimisation du temps d'éxécution de la CI/CD"
+            }
         },
         "second": {
             "title": "Développeur stagiaire | Accenture/Michelin | Clermont-Ferrand",
-            "subtitle": ""
+            "date": "Avril 2023 - Juin 2023",
+            "description": "Stage chez Accenture, en mission chez michelin",
+            "mission": {
+                "first": "Migration de données entre deux référentiels",
+                "second": "Implémentation de nouvelles fonctionnalités dans une application existante Angular/Springboot"
+            }
         },
         "third": {
             "title": "Demi chef de rang | Rivage Hôtel | Annecy",
-            "subtitle": ""
+            "date": "Juillet 2022 - Aout 2022",
+            "mission": {
+                "first": "Service en salle, réception des clients, runner, travail en équipe"
+            }
         }
     },
     "projects_section": {
@@ -36,7 +50,7 @@
         },
         "third": {
             "title": "Dou Shou Qi",
-            "description": "Dou Shou Qi est une adaptation du jeu de plateau Chinois Dou Shou Qi en application mobile. J'ai travailler sur ce projet dans le cadre du cours de Swift en 3ème année de BUT."
+            "description": "Dou Shou Qi est une adaptation du jeu de plateau Chinois Dou Shou Qi en application mobile. J'ai travaillé sur ce projet dans le cadre du cours de Swift en 3ème année de BUT."
         }
     },
     "contacts_section": {

@@ -471,7 +471,7 @@ main {
 	margin-bottom: 2px;
 	font-size: 14px;
 	display: none;
-	background-color: #f3f3f3;
+	background-color: var(--clr-bg);;
 }
 .accordeon__item .accordeon__arrow-item {
 	font-weight: 700;

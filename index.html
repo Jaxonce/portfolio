@@ -49,7 +49,9 @@
   <main>
     <!-- About -->
     <div class="about center">
-      <h1 id="title_first_part">Hi, I am <span id="title_second_part" class="about__name">Maxence Lanone.</span></h1>
+      <h1>
+        <p id="title_first_part">Hi, I am</p><span class="about__name">Maxence Lanone.</span>
+      </h1>
       <h2 id="role" class="about__role">A Full Stack Developer.</h2>
       <p class="about__desc" id="about_description">
         Je suis actuellement en dernière année de BUT Informatique à Clermont Ferrand, et je continue l'année prochaine
@@ -84,11 +86,28 @@
           </span>
         </div>
         <div class="accordeon__content">
-          <h4>Stack</h4>
+          <h4>Date</h4>
+          <p id="first_experience_date">Septembre 2023 - Aujourd'hui</p>
+          <h4 id="stack">Stack</h4>
           <ul>
             <li>Angular</li>
             <li>Springboot</li>
             <li>JUnit</li>
+          </ul>
+          <h4>Description</h4>
+          <p id="first_experience_desc">Alternance chez Accenture, en mission chez michelin</p>
+          <h4>Missions</h4>
+          <ul>
+            <li>
+              <p id="first_experience_mission_first">Recherche de solution de génération de tests unitaires grâce aux IA
+              </p>
+            </li>
+            <li>
+              <p id="first_experience_mission_second">Tests d'intégrations sur une application existante</p>
+            </li>
+            <li>
+              <p id="first_experience_mission_third">Optimisation du temps d'éxécution de la CI/CD</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -100,8 +119,26 @@
           </span>
         </div>
         <div class="accordeon__content">
-          <h4>Accenture/Michelin | Clermont-Ferrand</h4>
-          Stage chez michelin
+          <h4>Date</h4>
+          <p id="second_experience_date">Avril 2023 - Juin 2023</p>
+          <h4 id="stack">Stack</h4>
+          <ul>
+            <li>Angular</li>
+            <li>Springboot</li>
+            <li>PostgresSQL</li>
+          </ul>
+          <h4>Description</h4>
+          <p id="second_experience_desc">Stage chez Accenture, en mission chez michelin</p>
+          <h4>Missions</h4>
+          <ul>
+            <li>
+              <p id="second_experience_mission_first">Migration de données entre deux référentiels</p>
+            </li>
+            <li>
+              <p id="second_experience_mission_second">Implémentation de nouvelles fonctionnalités dans une application
+                existante Angular/Springboot</p>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="accordeon__item">
@@ -112,7 +149,10 @@
           </span>
         </div>
         <div class="accordeon__content">
-          Saison hotelerie
+          <h4>Date</h4>
+          <p id="third_experience_date">Juillet 2022 - Aout 2022</p>
+          <h4>Missions</h4>
+          <p id="third_experience_mission_first">Service en salle, réception des clients, runner, travail en équipe</p>
         </div>
       </div>
     </section>
@@ -126,9 +166,6 @@
         <div class="project">
           <h3>Trek 12</h3>
           <p id="first_project_description" class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
           </p>
           <ul class="project__stack">
             <li class="project__stack-item">React Native</li>
@@ -153,9 +190,6 @@
         <div class="project">
           <h3>Cypres</h3>
           <p id="second_project_description" class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
           </p>
           <ul class="project__stack">
             <li class="project__stack-item">Flutter</li>
@@ -174,9 +208,6 @@
         <div class="project">
           <h3>Dou Shou Qi</h3>
           <p id="third_project_description" class="project__description">
-            Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-            sapiente debitis labore sed ipsam Mollitia repellat illum quod
-            unde beatae Quis
           </p>
           <ul class="project__stack">
             <li class="project__stack-item">Swift</li>
@@ -227,10 +258,10 @@
   <footer class="footer">
     <div class="language-selector">
       <button onclick="setLanguage('en')">
-        <img id="flag_image" src="./assets/img/united-kingdom-flag.png"/>
+        <img id="flag_image" src="./assets/img/united-kingdom-flag.png" />
       </button>
       <button onclick="setLanguage('fr')">
-        <img id="flag_image" src="./assets/img/france-flag.png"/>
+        <img id="flag_image" src="./assets/img/france-flag.png" />
       </button>
       <button id="btn_accessibility" onclick="changeContrast()">Contraste</button>
       |

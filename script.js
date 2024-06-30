@@ -4,8 +4,8 @@ const btnTheme = document.querySelector('.fa-moon')
 const btnHamburger = document.querySelector('.fa-bars')
 
 const addThemeClass = (bodyClass, btnClass) => {
-  body.classList.add(bodyClass)
-  btnTheme.classList.add(btnClass)
+	body.classList.add(bodyClass)
+	btnTheme.classList.add(btnClass)
 }
 
 const getBodyTheme = localStorage.getItem('portfolio-theme')
@@ -20,7 +20,7 @@ const setTheme = (bodyClass, btnClass) => {
 	body.classList.remove(localStorage.getItem('portfolio-theme'))
 	btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
 
-  addThemeClass(bodyClass, btnClass)
+	addThemeClass(bodyClass, btnClass)
 
 	localStorage.setItem('portfolio-theme', bodyClass)
 	localStorage.setItem('portfolio-btn-theme', btnClass)
@@ -64,10 +64,10 @@ document.addEventListener('scroll', scrollUp)
 
 // accordeon
 
-$(function() {
-	
+$(function () {
+
 	//BEGIN
-	$(".accordeon__title").on("click", function(e) {
+	$(".accordeon__title").on("click", function (e) {
 
 		e.preventDefault();
 		var $this = $(this);
@@ -80,25 +80,25 @@ $(function() {
 
 		$this.toggleClass("accordeon-active");
 		$this.next().slideToggle();
-		$('.accordeon__arrow',this).toggleClass('accordeon__rotate');
+		$('.accordeon__arrow', this).toggleClass('accordeon__rotate');
 	});
 	//END
-	
+
 });
 
 // langage
 
 const translations = {
-    "en": "lang/en.json",
-    "fr": "lang/fr.json"
+	"en": "lang/en.json",
+	"fr": "lang/fr.json"
 };
 
 function setLanguage(lang) {
-    fetch(translations[lang])
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('experience').innerText = data.experiences;
-            document.getElementById('project').innerText = data.projects;
+	fetch(translations[lang])
+		.then(response => response.json())
+		.then(data => {
+			document.getElementById('experience').innerText = data.experiences;
+			document.getElementById('project').innerText = data.projects;
 			document.getElementById('skills').innerText = data.skills;
 			document.getElementById('contact').innerText = data.contact;
 			document.getElementById('title_first_part').innerText = data.title_first_part;
@@ -115,12 +115,33 @@ function setLanguage(lang) {
 			document.getElementById('third_project_description').innerText = data.projects_section.third.description;
 			document.getElementById('skills_section').innerText = data.skills;
 			document.getElementById('email_me').innerText = data.contacts_section.button;
-        })
-        .catch(error => console.error('Error loading translations:', error));
+
+			//date experience
+			document.getElementById('second_experience_date').innerText = data.experience_section.second.date;
+			document.getElementById('third_experience_date').innerText = data.experience_section.third.date;
+			document.getElementById('first_experience_date').innerText = data.experience_section.first.date;
+
+			//description experience
+			document.getElementById('first_experience_desc').innerText = data.experience_section.first.description;
+			document.getElementById('second_experience_desc').innerText = data.experience_section.first.description;
+
+			//mission experience
+			document.getElementById('first_experience_mission_first').innerText = data.experience_section.first.mission.first;
+			document.getElementById('first_experience_mission_second').innerText = data.experience_section.first.mission.second;
+			document.getElementById('first_experience_mission_third').innerText = data.experience_section.first.mission.third;
+
+			document.getElementById('second_experience_mission_first').innerText = data.experience_section.second.mission.first;
+			document.getElementById('second_experience_mission_second').innerText = data.experience_section.second.mission.second;
+
+			document.getElementById('third_experience_mission_first').textContent = data.experience_section.third.mission.first;
+
+
+		})
+		.catch(error => console.error('Error loading translations:', error));
 }
 
 // Set default language
-setLanguage('en');
+setLanguage('fr');
 
 // change contrast
 
